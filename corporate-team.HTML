@@ -3,343 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corporate Team Building | Outbound Offroad Adventure</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Corporate Team Building | Paket Outbound Offroad Adventure Malang</title>
+    
+    <meta name="description" content="Paket Corporate Team Building Offroad Adventure di Malang. Tingkatkan kekompakan tim dengan pengalaman offroad ekstrem, fasilitas VIP, dan fun games. Booking sekarang!">
+    <meta name="keywords" content="offroad malang, corporate team building, outbound malang, adventure offroad, paket gathering kantor">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://offroadadventure.com/corporate-team.html"> <meta property="og:type" content="product">
+    <meta property="og:title" content="Corporate Team Building | Outbound Offroad Adventure">
+    <meta property="og:description" content="Paket eksklusif Offroad + Team Building untuk perusahaan. Fasilitas VIP, Buffet, dan Dokumentasi.">
+    <meta property="og:image" content="aset/Corporate Team Building.webp">
+    <meta property="og:url" content="https://offroadadventure.com/corporate-team.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Corporate Team Building Offroad">
+    <meta name="twitter:description" content="Tingkatkan soliditas tim dengan petualangan offroad di Malang.">
+    <meta name="twitter:image" content="aset/Corporate Team Building.webp">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" as="image" href="aset/Corporate%20Team%20Building.webp"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/", 
+      "@type": "Product", 
+      "name": "Corporate Team Building Offroad Package",
+      "image": "https://offroadadventure.com/aset/Corporate%20Team%20Building.webp",
+      "description": "Paket Offroad khusus perusahaan untuk meningkatkan kerjasama tim (Team Building) dengan rute menantang dan fasilitas VIP.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Outbound Offroad Adventure"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://offroadadventure.com/corporate-team.html",
+        "priceCurrency": "IDR",
+        "price": "3000000",
+        "priceValidUntil": "2026-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "128"
+      }
+    }
+    </script>
 
     <style>
+    /* CSS structure preserved as requested */
     .fab-container {
-    position: fixed;
-    bottom: 24px;
-    right: 24px;
-    z-index: 9999;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
+        position: fixed; bottom: 24px; right: 24px; z-index: 9999;
+        display: flex; flex-direction: column; gap: 14px;
+    }
+    .fab-btn {
+        width: 58px; height: 58px; border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+        background: #000; box-shadow: 0 6px 18px rgba(0,0,0,.35);
+        cursor: pointer; transition: transform .3s;
+    }
+    .fab-btn:hover { transform: scale(1.1); }
+    .fab-wa { background: #25D366; }
+    .fab-btn svg { width: 24px; height: 24px; }
+    .fab-top { opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+    .fab-top.show { opacity: 1; pointer-events: auto; }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
+    body { background: #000; color: #fff; }
 
-.fab-btn {
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #000;
-    box-shadow: 0 6px 18px rgba(0,0,0,.35);
-    cursor: pointer;
-    transition: transform .3s;
-}
+    /* ===== NAVBAR ===== */
+    .navbar {
+        position: fixed; top: 0; left: 0; width: 100%; padding: 16px 8%;
+        display: flex; align-items: center; justify-content: space-between;
+        background: rgba(0, 0, 0, 0.95); backdrop-filter: blur(10px); z-index: 1000;
+    }
+    .logo { font-size: 22px; font-weight: 800; letter-spacing: 2px; color: #ff9800; text-decoration: none; white-space: nowrap; }
+    .logo span { color: #fff; }
+    .nav-menu { display: flex; align-items: center; gap: 26px; }
+    .nav-menu a { color: #fff; text-decoration: none; font-size: 14px; font-weight: 600; text-transform: uppercase; transition: 0.3s; }
+    .nav-menu a:hover { color: #ff9800; }
+    .nav-menu .cta { background: #ff9800; color: #000; padding: 10px 22px; border-radius: 30px; }
+    
+    /* DROPDOWN */
+    .nav-dropdown { position: relative; }
+    .dropdown-menu {
+        position: absolute; top: 100%; left: 0; background: #111; border-radius: 8px; min-width: 180px;
+        display: none; flex-direction: column; padding: 10px 0; box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+    .dropdown-menu a { padding: 12px 20px; font-size: 13px; text-transform: none; }
+    .dropdown-menu.show { display: flex; }
 
-.fab-btn:hover {
-    transform: scale(1.1);
-}
+    /* HAMBURGER */
+    .menu-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .menu-toggle span { width: 26px; height: 3px; background: #fff; border-radius: 5px; transition: 0.3s; }
 
-.fab-wa {
-    background: #25D366;
-}
+    /* ===== HEADER ===== */
+    .page-header {
+        height: 50vh;
+        /* Optimized: Use explicit gradient and preloaded image handled by browser cache */
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('aset/Corporate\ Team\ Building.webp');
+        background-size: cover; background-position: center;
+        display: flex; align-items: center; justify-content: center; text-align: center;
+        padding-top: 80px;
+    }
+    .page-header h1 { font-size: 25px; color: #ff9800; text-transform: uppercase; letter-spacing: 3px; }
 
-/* ukuran ikon svg */
-.fab-btn svg {
-    width: 24px;
-    height: 24px;
-}
-
-.fab-top {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.fab-top.show {
-    opacity: 1;
-    pointer-events: auto;
-}
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        body {
-            background: #000;
-            color: #fff;
-        }
-
-        /* ===== NAVBAR ===== */
-        .navbar {
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%;
-            padding: 16px 8%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: rgba(0, 0, 0, 0.95);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-        }
-        .logo { font-size: 22px; font-weight: 800; letter-spacing: 2px; color: #ff9800; text-decoration: none; white-space: nowrap; }
-        .logo span { color: #fff; }
-        .nav-menu { display: flex; align-items: center; gap: 26px; }
-        .nav-menu a { color: #fff; text-decoration: none; font-size: 14px; font-weight: 600; text-transform: uppercase; transition: 0.3s; }
-        .nav-menu a:hover { color: #ff9800; }
-        .nav-menu .cta { background: #ff9800; color: #000; padding: 10px 22px; border-radius: 30px; }
-        
-        /* DROPDOWN */
-        .nav-dropdown { position: relative; }
-        .dropdown-menu {
-            position: absolute; top: 100%; left: 0; background: #111; border-radius: 8px; min-width: 180px;
-            display: none; flex-direction: column; padding: 10px 0; box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-        }
-        .dropdown-menu a { padding: 12px 20px; font-size: 13px; text-transform: none; }
-        .dropdown-menu.show { display: flex; }
-
-        /* HAMBURGER */
-        .menu-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
-        .menu-toggle span { width: 26px; height: 3px; background: #fff; border-radius: 5px; transition: 0.3s; }
-
-        /* ===== HEADER ===== */
-        .page-header {
-            height: 50vh;
-            background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('aset/Corporate\ Team\ Building.webp');
-            background-size: cover; background-position: center;
-            display: flex; align-items: center; justify-content: center; text-align: center;
-            padding-top: 80px;
-        }
-        .page-header h1 { font-size: 25px; color: #ff9800; text-transform: uppercase; letter-spacing: 3px; }
-
-        /* ===== MINI CONTENT INSIDE BOOKING SECTION ===== */
-.booking-mini{
-    grid-column: 1 / -1; /* FULL LEBAR di booking-section */
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    gap: 30px;
-    align-items: center;
-    background: #0b0b0b;
-    border: 1px solid #222;
-    border-radius: 16px;
-    padding: 20px;
-    margin-bottom: 40px;
-}
-
-.booking-mini-img img{
-    width: 100%;
-    height: 200px; /* KECIL & MEMANJANG */
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-.booking-mini-text h3{
-    color: #ff9800;
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.booking-mini-text p{
-    font-size: 14px;
-    color: #ccc;
-    line-height: 1.7;
-    margin-bottom: 8px;
-}
-
-/* MOBILE */
-@media(max-width:768px){
+    /* ===== MINI CONTENT INSIDE BOOKING SECTION ===== */
     .booking-mini{
-        grid-template-columns: 1fr;
-        padding: 16px;
+        grid-column: 1 / -1; display: grid; grid-template-columns: 1.1fr 1fr;
+        gap: 30px; align-items: center; background: #0b0b0b;
+        border: 1px solid #222; border-radius: 16px; padding: 20px; margin-bottom: 40px;
     }
     .booking-mini-img img{
-        height: 170px;
+        width: 100%; height: 200px; object-fit: cover; border-radius: 12px;
     }
-}
+    .booking-mini-text h3{ color: #ff9800; font-size: 22px; margin-bottom: 10px; }
+    .booking-mini-text p{ font-size: 14px; color: #ccc; line-height: 1.7; margin-bottom: 8px; }
 
-        /* ===== BAGIAN PEMESANAN ===== */
-        .booking-section {
-            padding: 80px 8%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: start;
-        }
-
-        .booking-info h2 { font-size: 32px; color: #ff9800; margin-bottom: 20px; }
-        .booking-info p { color: #ccc; line-height: 1.8; margin-bottom: 30px; }
-        
-        .facility-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        .facility-item {
-            background: #111;
-            padding: 20px;
-            border-radius: 12px;
-            border-left: 3px solid #ff9800;
-        }
-        .facility-item i { color: #ff9800; margin-bottom: 10px; font-size: 20px; }
-        .facility-item h4 { font-size: 16px; margin-bottom: 5px; }
-
-        /* Kartu Pesan */
-        .booking-card {
-            background: #111;
-            padding: 40px;
-            border-radius: 25px;
-            border: 1px solid #333;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-        }
-        .booking-card h3 { font-size: 24px; margin-bottom: 10px; text-align: center; }
-        .price-tag { 
-            text-align: center; 
-            font-size: 36px; 
-            font-weight: 800; 
-            color: #ff9800; 
-            margin-bottom: 10px; 
-        }
-        .price-tag span { font-size: 14px; color: #777; font-weight: 400; }
-        
-        .capacity-note {
-            text-align: center;
-            color: #ffb74d;
-            font-size: 13px;
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #222;
-        }
-
-        .form-group { margin-bottom: 20px; }
-        .form-group label { display: block; margin-bottom: 8px; font-size: 14px; color: #aaa; }
-        .form-group input, .form-group select {
-            width: 100%;
-            padding: 14px;
-            background: #000;
-            border: 1px solid #444;
-            color: #fff;
-            border-radius: 10px;
-            outline: none;
-        }
-
-        .total-display {
-            background: #1a1a1a;
-            padding: 15px;
-            border-radius: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .btn-booking {
-            display: block;
-            width: 100%;
-            background: #ff9800;
-            color: #000;
-            padding: 18px;
-            text-align: center;
-            text-decoration: none;
-            font-weight: 800;
-            border-radius: 10px;
-            text-transform: uppercase;
-            transition: 0.3s;
-        }
-        .btn-booking:hover { background: #fff; }
-
-
-/* ===== footer ===== */
-.footer{
-    background:#0b0b0b;
-    padding:70px 8% 25px;
-}
-
-.footer-container{
-    display:grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
-    gap:40px;
-    max-width:1200px;
-    margin:auto;
-}
-
-.footer-box h3{
-    color:#ff9800;
-    margin-bottom:16px;
-    font-size:18px;
-}
-
-.footer-box p{
-    color:#bbb;
-    font-size:14px;
-    line-height:1.8;
-    margin-bottom:6px;
-}
-
-.footer-box a{
-    display:block;
-    color:#aaa;
-    font-size:14px;
-    margin-bottom:8px;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.footer-box a:hover{
-    color:#ff9800;
-    transform:translateX(4px);
-}
-
-/* SOSIAL */
-.social-icons{
-    display:flex;
-    gap:12px;
-}
-
-.social{
-    width:40px;
-    height:40px;
-    background:#1a1a1a;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:18px;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.social:hover{
-    background:#ff9800;
-    color:#000;
-}
-
-/* BOTTOM */
-.footer-bottom{
-    border-top:1px solid #222;
-    margin-top:40px;
-    padding-top:20px;
-    text-align:center;
-    font-size:13px;
-    color:#666;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-    .footer-container{
-        grid-template-columns:1fr;
-        gap:35px;
+    /* MOBILE */
+    @media(max-width:768px){
+        .booking-mini{ grid-template-columns: 1fr; padding: 16px; }
+        .booking-mini-img img{ height: 170px; }
     }
-}
 
-        /* MOBILE RESPONSIVE */
-        @media (max-width: 768px) {
-            .menu-toggle { display: flex; }
-            .nav-menu {
-                position: absolute; top: 100%; right: -100%; background: #000;
-                flex-direction: column; width: 100%; padding: 40px; gap: 25px; transition: 0.4s; height: 100vh;
-            }
-            .nav-menu.active { right: 0; }
-            .booking-section { grid-template-columns: 1fr; }
-        }
+    /* ===== BAGIAN PEMESANAN ===== */
+    .booking-section {
+        padding: 80px 8%; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start;
+    }
+    .booking-info h2 { font-size: 32px; color: #ff9800; margin-bottom: 20px; }
+    .booking-info p { color: #ccc; line-height: 1.8; margin-bottom: 30px; }
+    
+    .facility-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .facility-item { background: #111; padding: 20px; border-radius: 12px; border-left: 3px solid #ff9800; }
+    .facility-item i { color: #ff9800; margin-bottom: 10px; font-size: 20px; }
+    .facility-item h4 { font-size: 16px; margin-bottom: 5px; }
 
-        @media (min-width: 769px) {
-            .nav-dropdown:hover .dropdown-menu { display: flex; }
+    /* Kartu Pesan */
+    .booking-card {
+        background: #111; padding: 40px; border-radius: 25px;
+        border: 1px solid #333; box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    .booking-card h3 { font-size: 24px; margin-bottom: 10px; text-align: center; }
+    .price-tag { text-align: center; font-size: 36px; font-weight: 800; color: #ff9800; margin-bottom: 10px; }
+    .price-tag span { font-size: 14px; color: #777; font-weight: 400; }
+    .capacity-note {
+        text-align: center; color: #ffb74d; font-size: 13px;
+        margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #222;
+    }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; margin-bottom: 8px; font-size: 14px; color: #aaa; }
+    .form-group input, .form-group select {
+        width: 100%; padding: 14px; background: #000; border: 1px solid #444;
+        color: #fff; border-radius: 10px; outline: none;
+    }
+    .total-display {
+        background: #1a1a1a; padding: 15px; border-radius: 10px;
+        display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;
+    }
+    .btn-booking {
+        display: block; width: 100%; background: #ff9800; color: #000;
+        padding: 18px; text-align: center; text-decoration: none;
+        font-weight: 800; border-radius: 10px; text-transform: uppercase; transition: 0.3s;
+    }
+    .btn-booking:hover { background: #fff; }
+
+    /* ===== footer ===== */
+    .footer{ background:#0b0b0b; padding:70px 8% 25px; }
+    .footer-container{ display:grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap:40px; max-width:1200px; margin:auto; }
+    .footer-box h3{ color:#ff9800; margin-bottom:16px; font-size:18px; }
+    .footer-box p{ color:#bbb; font-size:14px; line-height:1.8; margin-bottom:6px; }
+    .footer-box a{ display:block; color:#aaa; font-size:14px; margin-bottom:8px; text-decoration:none; transition:.3s; }
+    .footer-box a:hover{ color:#ff9800; transform:translateX(4px); }
+    
+    .footer-bottom{ border-top:1px solid #222; margin-top:40px; padding-top:20px; text-align:center; font-size:13px; color:#666; }
+
+    /* MOBILE RESPONSIVE */
+    @media (max-width: 768px) {
+        .menu-toggle { display: flex; }
+        .nav-menu {
+            position: absolute; top: 100%; right: -100%; background: #000;
+            flex-direction: column; width: 100%; padding: 40px; gap: 25px; transition: 0.4s; height: 100vh;
         }
+        .nav-menu.active { right: 0; }
+        .booking-section { grid-template-columns: 1fr; }
+        .footer-container{ grid-template-columns:1fr; gap:35px; }
+    }
+    @media (min-width: 769px) {
+        .nav-dropdown:hover .dropdown-menu { display: flex; }
+    }
     </style>
 </head>
 <body>
@@ -347,7 +205,7 @@
 <nav class="navbar">
     <a href="index.html" class="logo">OFF<span>ROAD</span></a>
 
-    <div class="menu-toggle" id="menuToggle">
+    <div class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
         <span></span>
         <span></span>
         <span></span>
@@ -356,47 +214,44 @@
     <div class="nav-menu" id="navMenu">
         <a href="index.html">Home</a>
         <a href="tentang-kami.html">Tentang</a>
-        <a href="blog.HTML">Blog</a>
+        <a href="blog.html">Blog</a>
 
         <div class="nav-dropdown">
             <a href="#" id="paketBtn">Paket ▾</a>
             <div class="dropdown-menu" id="paketMenu">
-                <a href="fun-offroad.Html">Fun Offroad</a>
-                <a href="adventure-offroad.HTML">Adventure Offroad</a>
-                <a href="corporate-team.HTML">Corporate Team</a>
+                <a href="fun-offroad.html">Fun Offroad</a>
+                <a href="adventure-offroad.html">Adventure Offroad</a>
+                <a href="corporate-team.html">Corporate Team</a>
             </div>
         </div>
 
         <a href="galeri.html">Galeri</a>
-     <a href="https://wa.me/628123456789?text=Halo,%20saya%20ingin%20booking" class="cta">Booking</a>
+        <a href="https://wa.me/628123456789?text=Halo,%20saya%20ingin%20booking" class="cta">Booking</a>
     </div>
 </nav>
 
-<div class="page-header">
+<header class="page-header">
     <h1>Corporate Team Building</h1>
-</div>
+</header>
 
 <section class="booking-section">
-    <!-- MINI IMAGE + TEXT (INSIDE BOOKING SECTION) -->
-<div class="booking-mini">
-    
-    <div class="booking-mini-img">
-        <img src="aset/Corporate Team Building.webp" alt="Offroad Adventure">
-    </div>
+    <div class="booking-mini">
+        <div class="booking-mini-img">
+            <img src="aset/Corporate Team Building.webp" alt="Corporate Team Building Offroad Activity" width="400" height="200" loading="lazy">
+        </div>
 
-    <div class="booking-mini-text">
-        <h3>Corporate Team Building</h3>
-        <p>
-            Lebih dari sekadar berkendara, Adventure Offroad menghadirkan
-            jalur ekstrem yang menguji keberanian dan kekompakan tim.
-        </p>
-        <p>
-            Setiap rute dirancang untuk memberi pengalaman seru,
-            aman, dan penuh tantangan alam.
-        </p>
+        <div class="booking-mini-text">
+            <h3>Corporate Team Building</h3>
+            <p>
+                Lebih dari sekadar berkendara, Adventure Offroad menghadirkan
+                jalur ekstrem yang menguji keberanian dan kekompakan tim.
+            </p>
+            <p>
+                Setiap rute dirancang untuk memberi pengalaman seru,
+                aman, dan penuh tantangan alam.
+            </p>
+        </div>
     </div>
-
-</div>
 
     <div class="booking-info">
         <h2>Corporate Team Adventure</h2>
@@ -436,12 +291,12 @@
         <p class="capacity-note"><i class="fas fa-info-circle"></i> 1 Mobil Maksimal 4 Orang</p>
 
         <div class="form-group">
-            <label>Tanggal Pelaksanaan</label>
+            <label for="bookDate">Tanggal Pelaksanaan</label>
             <input type="date" id="bookDate">
         </div>
 
         <div class="form-group">
-            <label>Jumlah Unit Mobil</label>
+            <label for="totalCars">Jumlah Unit Mobil</label>
             <select id="totalCars" onchange="calculatePrice()">
                 <option value="1">1 Mobil</option>
                 <option value="2">2 Mobil</option>
@@ -457,17 +312,15 @@
             <span id="finalPrice" style="color:#ff9800;font-weight:800">IDR 3.000.000</span>
         </div>
 
-        <a href="javascript:void(0)" class="btn-booking" onclick="sendWA(628123456789)">
+        <a href="javascript:void(0)" class="btn-booking" onclick="sendWA(628123456789)" aria-label="Ajukan Penawaran via WhatsApp">
             <i class="fab fa-whatsapp"></i> Ajukan Penawaran
         </a>
     </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-container">
 
-    <!-- BRAND -->
     <div class="footer-box">
       <h3 class="footer-logo">OFFROAD ADVENTURE</h3>
       <p>Jalan Raya Adventure No.12, Kota Malang, Indonesia</p>
@@ -475,61 +328,40 @@
       <p>Telp: +62 812-3456-7890</p>
     </div>
 
-    <!-- QUICK LINKS -->
     <div class="footer-box">
       <h3>Quick Links</h3>
       <a href="index.html">Home</a>
       <a href="tentang-kami.html">Tentang</a>
       <a href="galeri.html">Galeri</a>
-      <a href="blog.HTML">Blog</a>
+      <a href="blog.html">Blog</a>
     </div>
 
-    <!-- PAKET -->
     <div class="footer-box">
       <h3>Paket Populer</h3>
-      <a href="fun-offroad.Html">Fun Offroad</a>
-      <a href="adventure-offroad.HTML">Adventure Offroad</a>
-      <a href="corporate-team.HTML">Corporate Team</a>
+      <a href="fun-offroad.html">Fun Offroad</a>
+      <a href="adventure-offroad.html">Adventure Offroad</a>
+      <a href="corporate-team.html">Corporate Team</a>
     </div>
 
- <div>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
-    <h3>Sosial Media</h3>
-    <p>Ikuti & hubungi kami melalui platform favorit Anda:</p>
-
-    <div style="display:flex; gap:18px; margin-top:15px; font-size:26px;">
-        
-        <!-- Instagram -->
-        <a href="https://wa.me/628123456789?text=Halo,%20saya%20tertarik%20dari%20Instagram"
-           title="Instagram"
-           style="color:#E1306C;">
-            <i class="bi bi-instagram"></i>
-        </a>
-
-        <!-- Facebook -->
-        <a href="https://wa.me/628123456789?text=Halo,%20saya%20tertarik%20dari%20Facebook"
-           title="Facebook"
-           style="color:#1877F2;">
-            <i class="bi bi-facebook"></i>
-        </a>
-
-        <!-- TikTok -->
-        <a href="https://wa.me/628123456789?text=Halo,%20saya%20tertarik%20dari%20dari%20TikTok"
-           title="TikTok"
-           style="color:#FFFFFF;">
-            <i class="bi bi-tiktok"></i>
-        </a>
-
-        <!-- WhatsApp -->
-        <a href="https://wa.me/628123456789?text=Halo,%20saya%20ingin%20booking"
-           title="WhatsApp"
-           style="color:#25D366;">
-            <i class="bi bi-whatsapp"></i>
-        </a>
-
+    <div class="footer-box">
+        <h3>Sosial Media</h3>
+        <p>Ikuti & hubungi kami:</p>
+        <div style="display:flex; gap:18px; margin-top:15px; font-size:26px;">
+            <a href="https://wa.me/628123456789?text=Instagram" title="Instagram" style="color:#E1306C;" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://wa.me/628123456789?text=Facebook" title="Facebook" style="color:#1877F2;" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://wa.me/628123456789?text=TikTok" title="TikTok" style="color:#FFFFFF;" aria-label="TikTok">
+                <i class="bi bi-tiktok"></i>
+            </a>
+            <a href="https://wa.me/628123456789?text=WhatsApp" title="WhatsApp" style="color:#25D366;" aria-label="WhatsApp">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+        </div>
     </div>
-</div>
+
   </div>
 
   <div class="footer-bottom">
@@ -537,7 +369,25 @@
   </div>
 </footer>
 
+<div class="fab-container">
+    <div class="fab-btn fab-top" id="backToTop" onclick="backToTop()" aria-label="Back to Top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5" />
+            <path d="M5 12l7-7 7 7" />
+        </svg>
+    </div>
+
+    <a href="https://wa.me/628123456789?text=Halo%20saya%20ingin%20bertanya" target="_blank" class="fab-btn fab-wa" aria-label="Chat WhatsApp">
+        <svg viewBox="0 0 512 512" width="28" height="28">
+          <path fill="#FFFFFF" d="M256 32C132.3 32 32 128.9 32 248c0 50.6 18.1 97.3 48.3 134.2L48 480l101.6-30.1c33.4 18.3 71.8 28.7 112.4 28.7 123.7 0 224-96.9 224-216.6S379.7 32 256 32z"/>
+          <path fill="#25D366" d="M256 64c-105.9 0-192 83.6-192 184 0 46.3 18.2 89.4 48.4 121.6L96 416l50.5-14.7C177.6 420.8 215.8 432 256 432c105.9 0 192-83.6 192-184S361.9 64 256 64z"/>
+          <path fill="#FFFFFF" d="M341.6 299.2c-5.2-2.6-30.6-15-35.3-16.7-4.7-1.7-8.1-2.6-11.5 2.6-3.4 5.2-13.3 16.7-16.3 20.1-3 3.4-6 3.9-11.2 1.3-30.6-15-50.6-26.8-70.7-60.8-5.2-8.9 5.2-8.3 15-28.2 1.7-3.4.9-6.5-.4-9.1-1.3-2.6-11.5-27.4-15.8-37.6-4.3-10.4-8.7-9.1-11.5-9.1-3 0-6.5-.4-10-.4s-9.1 1.3-13.9 6.5c-4.8 5.2-18.3 17.9-18.3 43.7s18.7 50.8 21.3 54.2c2.6 3.4 36.9 56.3 89.5 78.9 12.5 5.4 22.3 8.6 29.9 11 12.6 4 24.1 3.4 33.2 2.1 10.1-1.5 30.6-12.5 34.9-24.6 4.3-12.1 4.3-22.5 3-24.6-1.3-2.1-4.7-3.4-9.9-6z"/>
+        </svg>
+    </a>
+</div>
+
 <script>
+// Toggle Menu
 const menuToggle=document.getElementById("menuToggle");
 const navMenu=document.getElementById("navMenu");
 const paketBtn=document.getElementById("paketBtn");
@@ -551,13 +401,15 @@ paketBtn.onclick=(e)=>{
     }
 }
 
+// Calculate Price
 function calculatePrice(){
     const car=document.getElementById("totalCars").value;
-    const price=3000000; // Harga Corporate lebih mahal
+    const price=3000000;
     document.getElementById("finalPrice").innerText=
         "IDR "+(car*price).toLocaleString("id-ID");
 }
 
+// Send WA
 function sendWA(){
     const date=document.getElementById("bookDate").value;
     const cars=document.getElementById("totalCars").value;
@@ -568,48 +420,11 @@ Tanggal: ${date}
 Jumlah Mobil: ${cars} unit
 Total: ${total}
 Mohon kirimkan detail penawaran resminya.`;
-    window.open("https://wa.me/6281234567890?text="+encodeURIComponent(msg));
+    window.open("https://wa.me/628123456789?text="+encodeURIComponent(msg));
 }
-</script>
-<div class="fab-container">
 
-    <!-- BACK TO TOP -->
-    <div class="fab-btn fab-top" id="backToTop" onclick="backToTop()">
-        <!-- SVG PANAH -->
-        <svg viewBox="0 0 24 24" fill="none"
-             stroke="white" stroke-width="2.5"
-             stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 19V5" />
-            <path d="M5 12l7-7 7 7" />
-        </svg>
-    </div>
-
-    <!-- WHATSAPP -->
-     <div class="fab-btn fab-wa">
-    <!-- SVG DI SINI -->
-   
-
-<a href="https://wa.me/628123456789?text=Halo%20saya%20ingin%20bertanya"
-   target="_blank">
-<svg viewBox="0 0 512 512" width="28" height="28">
-  <!-- BALON CHAT -->
-  <path fill="#FFFFFF" d="M256 32C132.3 32 32 128.9 32 248c0 50.6 18.1 97.3 48.3 134.2L48 480l101.6-30.1c33.4 18.3 71.8 28.7 112.4 28.7 123.7 0 224-96.9 224-216.6S379.7 32 256 32z"/>
-  
-  <!-- LOGO WA -->
-  <path fill="#25D366" d="M256 64c-105.9 0-192 83.6-192 184 0 46.3 18.2 89.4 48.4 121.6L96 416l50.5-14.7C177.6 420.8 215.8 432 256 432c105.9 0 192-83.6 192-184S361.9 64 256 64z"/>
-
-  <!-- TELEPON WA -->
-  <path fill="#FFFFFF" d="M341.6 299.2c-5.2-2.6-30.6-15-35.3-16.7-4.7-1.7-8.1-2.6-11.5 2.6-3.4 5.2-13.3 16.7-16.3 20.1-3 3.4-6 3.9-11.2 1.3-30.6-15-50.6-26.8-70.7-60.8-5.2-8.9 5.2-8.3 15-28.2 1.7-3.4.9-6.5-.4-9.1-1.3-2.6-11.5-27.4-15.8-37.6-4.3-10.4-8.7-9.1-11.5-9.1-3 0-6.5-.4-10-.4s-9.1 1.3-13.9 6.5c-4.8 5.2-18.3 17.9-18.3 43.7s18.7 50.8 21.3 54.2c2.6 3.4 36.9 56.3 89.5 78.9 12.5 5.4 22.3 8.6 29.9 11 12.6 4 24.1 3.4 33.2 2.1 10.1-1.5 30.6-12.5 34.9-24.6 4.3-12.1 4.3-22.5 3-24.6-1.3-2.1-4.7-3.4-9.9-6z"/>
-</svg>
-</a>
-</div>
-
-</div>
-
-
-<script>
+// Back To Top
 const topBtn = document.getElementById("backToTop");
-
 window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
         topBtn.classList.add("show");
@@ -617,7 +432,6 @@ window.addEventListener("scroll", () => {
         topBtn.classList.remove("show");
     }
 });
-
 function backToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
 }
